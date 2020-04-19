@@ -80,7 +80,7 @@ static UIImage * _placeHolderImage;
     }
 
     if (_clusterProperties != nil) {
-        NSDictionary<NSString *, NSArray<NSExpression *>> *properties = [NSMutableDictionary new];
+        NSMutableDictionary<NSString *, NSArray<NSExpression *>> *properties = [NSMutableDictionary new];
 
         for (NSString *propertyName in _clusterProperties.allKeys) {
             NSArray<NSExpression *> *expressions = [_clusterProperties objectForKey: propertyName];
